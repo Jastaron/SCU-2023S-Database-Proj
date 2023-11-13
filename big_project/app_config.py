@@ -8,8 +8,8 @@ bcrypt = Bcrypt(app)
 app.config['SECRET_KEY'] = '1145141919810'
 
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '20030415'
-app.config['MYSQL_DB'] = 'database_project'
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
 
 mysql = MySQL(app)
