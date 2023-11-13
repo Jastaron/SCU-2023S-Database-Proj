@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>旅好网-登录界面</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="sign-in.css" rel="stylesheet">
+    </head>
+    <img src="star_sea.jpg" class="background-image">
+    <body class="text-center">
+        <div class="signin-container">
+            <form action="/" method="POST" class="form-register">
+                <br>
+                <h1 class="h_1">旅好网酒店预订服务平台</h1><br>
+                <label for="username" class="label-register">用户 </label>
+                <input type="text" id="username" name="username" class="form-signin" placeholder="用户名" autofocus="" required>
+                <p class="mb-3 text-muted">未找到该用户，请确认是否注册</p>
+                <label for="password" class="label-register">密码 </label>
+                <input type="password" id="password" name="password" class="form-signin" placeholder="密码" required>
+                <div class="checkbox mb-3"></div>
+                <input  class="w-50 btn btn-primary" type="submit" value="登录">
+                <p class="mb-3 text-muted">还未注册？<a href="/register">注册</a></p>
+                <p class="mb-3 text-muted">&copy; 2023-114514</p>
+            </form>
+
+        </div>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

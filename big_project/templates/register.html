@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>旅好网-注册界面</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="sign-in.css" rel="stylesheet">
+    </head>
+    <img src="star_sea.jpg" class="background-image">
+    <body class="text-center">
+        <div class="signin-container">
+            <form action="/register" method="POST" class="form-register">
+                <br>
+                <h1 class="h_1">用户注册</h1><br>
+                <span class="p_2">*</span>
+                <label for="name" class="label-register">姓名:</label>
+                <input type="text" id="name" name="name" class="form-signin" placeholder="请输入姓名" required><br><br>
+                <span class="p_2">*</span>
+                <label for="phone" class="label-register">手机:</label>
+                <input type="text" id="phone" name="phone" class="form-signin" placeholder="请输入11位手机号码" required><br><br>
+                <span class="p_2">*</span>
+                <label for="email" class="label-register">邮箱:</label>
+                <input type="email" id="email" name="email" class="form-signin" placeholder="请输入正确邮箱" required><br><br>
+                <span class="p_3">*</span>
+                <label for="username" class="label-register">用户名:</label>
+                <input type="text" id="username" name="username" class="form-signin" placeholder="请输入用户名" required><br><br>
+                <span class="p_2">*</span>
+                <label for="password" class="label-register">密码:</label>
+                <input type="password" id="password" name="password" class="form-signin" placeholder="请输入密码" required><br><br>
+                <span class="p_4">*</span>
+                <label for="confirm_password" class="label-register">确认密码:</label>
+                <input type="password" id="confirm_password" name="confirm_password" class="form-signin" placeholder="请确认密码" required><br><br>
+
+                <input type="submit" value="Register" class="w-50 btn btn-primary">
+                <p class="mb-3 text-muted">已经有账号了? <a href="/">登录</a></p>
+            </form>
+        </div>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Pinegrow Web Editor - Directory Bootstrap v5 Template">
+        <meta name="author" content="">
+        <title>旅好网前台服务平台</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="blocks.css">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="table_good.css" rel="stylesheet">
+    </head>
+    <body class="text-black-50">
+        <header style="background-color: rgba(255, 255, 255, 0.6);" class="fixed-top" data-pgc="directory.header">
+            <nav class="border-bottom navbar navbar-expand-lg navbar-light pb-lg-0 pt-lg-0"> 
+                <div class="container"> 
+                    <ul class="align-items-lg-center flex-row ms-auto me-2 me-lg-0 navbar-nav order-lg-2"> 
+                        <li class="d-none d-sm-block nav-item"> 
+</li>
+                        <li class="ms-2 nav-item"> 
+</li>                         
+                    </ul>
+                    <a class="fw-bold navbar-brand" href="." target="_pg_blank">旅好网前台服务平台</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown-3"> 
+                        <ul class="navbar-nav "> 
+                            <li class="nav-item"> 
+</li>
+                            <a class="nav-link px-lg-3 py-lg-4 text-dark" href="/counter-orders">查看订单</a>
+                            <li class="nav-item dropdown">
+</li>
+                            <li class="nav-item"> 
+</li>
+                            <li class="nav-item"> 
+</li>                             
+                            <li class="nav-item"> 
+</li>                             
+                        </ul>
+                        <ul class="align-items-lg-center ms-auto navbar-nav"> 
+                            <li class="nav-item"> 
+                                <a class="nav-link px-lg-3 py-lg-4 text-dark" href="/Home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1.25em" height="1.25em" class="me-2">
+                                        <g>
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-4.987-3.744A7.966 7.966 0 0 0 12 20c1.97 0 3.773-.712 5.167-1.892A6.979 6.979 0 0 0 12.16 16a6.981 6.981 0 0 0-5.147 2.256zM5.616 16.82A8.975 8.975 0 0 1 12.16 14a8.972 8.972 0 0 1 6.362 2.634 8 8 0 1 0-12.906.187zM12 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                                        </g>
+                                    </svg>个人界面</a> 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+            </nav>
+        </header>
+        <main>
+            <section>
+                <br>
+                <br>
+            </section>
+            <section class="pb-5 pt-5">
+                <div class="container pb-2 pt-2">
+                    <form action="/room-checkin" method="POST">
+                        <center>
+                        <h1>{{ room_id }}</h1>
+                        <hr>
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>房客姓名</th>
+                                    <th>房客手机</th>
+                                    <th>房客身份证</th>
+                                    <th>预入住日期</th>
+                                    <th>预离开日期</th>
+                                    <th>期待房型</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in items %}
+                                <tr>
+                                    <td>{{ i.Order_id }}</td>
+                                    <td>{{ i.tenant_name }}</td>
+                                    <td>{{ i.tenant_phone }}</td>
+                                    <td>{{ i.tenant_PRC_id }}</td>
+                                    <td>{{ i.Check_in_date }}</td>
+                                    <td>{{ i.Leaving_date }}</td>
+                                    <td>{{ i.Desire_Type }}</td>
+                                    <td>
+                                        <label for="o_id" hidden></label>
+                                        <label for="r_id" hidden></label>
+                                        <input hidden id="o_id" name="o_id" value="{{ i.Order_id }}">
+                                        <input hidden id="r_id" name="r_id" value="{{ room_id }}">
+                                        <input type="submit" class="btn rounded-pill btn-primary" value="确认入住">
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </center>
+                    </form>
+                </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark pt-5 text-secondary" data-pgc="directory.footer"> 
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="pb-3 pt-3 small"> 
+                        <hr class="border-secondary mt-0"> 
+                        <div class="align-items-center row">
+                            <div class="col-md pb-2 pt-2">
+                                <p class="mb-0">&copy; 2023 - 114514 | 旅好网拥有最终解释权</p>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>                 
+            </div>             
+        </footer>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

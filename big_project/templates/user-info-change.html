@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Pinegrow Web Editor - Directory Bootstrap v5 Template">
+        <meta name="author" content="">
+        <title>旅好网-竭诚为您服务</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="blocks.css">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="div-form.css" rel="stylesheet">
+    </head>
+    <body class="text-black-50">
+        <header style="background-color: rgba(255, 255, 255, 0.6);" class="fixed-top" data-pgc="directory.header">
+            <nav class="border-bottom navbar navbar-expand-lg navbar-light pb-lg-0 pt-lg-0"> 
+                <div class="container"> 
+                    <ul class="align-items-lg-center flex-row ms-auto me-2 me-lg-0 navbar-nav order-lg-2"> 
+                        <li class="d-none d-sm-block nav-item"> 
+</li>
+                        <li class="ms-2 nav-item"> 
+</li>                         
+                    </ul>
+                    <a class="fw-bold navbar-brand" href="/Home">旅好网</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3" aria-expanded="false" aria-label="Toggle navigation"> 
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown-3"> 
+                        <ul class="navbar-nav "> 
+                            <li class="nav-item"> 
+</li>
+                            <a class="nav-link px-lg-3 py-lg-4 text-dark" href="/user-orders">个人订单</a>
+                            <a class="nav-link px-lg-3 py-lg-4 text-dark" href="/user-info-change">修改个人信息</a>
+                            <a class="nav-link px-lg-3 py-lg-4 text-dark" href="#">帮助</a>
+                            <li class="nav-item dropdown">
+</li>
+                            <li class="nav-item"> 
+</li>
+                            <li class="nav-item"> 
+</li>                             
+                            <li class="nav-item"> 
+</li>                             
+                        </ul>
+                        <ul class="align-items-lg-center ms-auto navbar-nav"> 
+                            <li class="nav-item"> 
+</li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
+            </nav>
+        </header>
+        <main>
+            <section class="pb-3 position-relative pt-3 shadow">
+                <div class="container">
+                    <div class="align-items-center gy-3 row">
+                        <div class="col-lg-auto"> 
+</div>
+                    </div>                     
+                </div>
+            </section>
+            <section class="pb-5 pt-5">
+
+                <div class="container pb-2 pt-2">
+                    <form action="/user-info-change" class="form-control">
+                        <br>
+                        <h1 class="h_1 text-center">修改个人信息</h1><br>
+                        <center>
+                            <div class="container pb-2 pt-2">
+                                <span class="p_2">*</span>
+                                <label for="name" class="label-register">姓名:</label>
+                                <input type="text" id="name" name="name" class="form-signin" placeholder="请输入姓名" value="{{cu.name}}" required><br><br>
+                                <span class="p_2">*</span>
+                                <label for="phone" class="label-register">手机:</label>
+                                <input type="text" id="phone" name="phone" class="form-signin" placeholder="请输入11位手机号码" value="{{cu.phone}}" required><br><br>
+                                <span class="p_2">*</span>
+                                <label for="email" class="label-register">邮箱:</label>
+                                <input type="email" id="email" name="email" class="form-signin" placeholder="请输入正确邮箱" value="{{cu.email}}" required><br><br>
+                                <span class="p_3">*</span>
+                                <label for="username" class="label-register">用户名:</label>
+                                <input type="text" id="username" name="username" class="form-signin" placeholder="请输入用户名" value="{{cu.username}}" required><br><br>
+                                <span class="p_2">*</span>
+                                <label for="password" class="label-register">密码:</label>
+                                <input type="password" id="password" name="password" class="form-signin" placeholder="请输入密码" required><br><br>
+                            </div>
+                        </center>
+                        <center>
+                            <input type="submit" value="确认修改" class="w-50 btn btn-primary">
+                        </center>
+                    </form>
+                </div>                 
+            </section>
+            <div class="container pb-4 pt-4">
+                <hr class="mb-0 mt-0"/>
+            </div>
+        </main>
+        <footer class="bg-dark pt-5 text-secondary" data-pgc="directory.footer"> 
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="pb-3 pt-3 small"> 
+                        <hr class="border-secondary mt-0"> 
+                        <div class="align-items-center row">
+                            <div class="col-md pb-2 pt-2">
+                                <p class="mb-0">&copy; 2023 - 114514 | 旅好网拥有最终解释权</p>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>                 
+            </div>             
+        </footer>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
